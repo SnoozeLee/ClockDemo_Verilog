@@ -25,6 +25,6 @@ input clk_in_50M;      // 50MHz -> 20ns
 // Div_100(clk_out_sec, clk1);
 
 // 加快50000倍
-Div_100(clk_out_sec, clk_in_50M);
+Div_100 div_A(clk_out_sec, clk_in_50M);
 
 endmodule //Clock_sec

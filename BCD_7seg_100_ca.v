@@ -12,8 +12,8 @@ always @(num_in) begin
     gewei_value = num_in%10;
 end
 
-BCD_7seg_decoder_ca(shiwei_out, shiwei_value);
-BCD_7seg_decoder_ca(gewei_out, gewei_value);
+BCD_7seg_decoder_ca shiweiModule(shiwei_out, shiwei_value);
+BCD_7seg_decoder_ca geweiModule(gewei_out, gewei_value);
 
 endmodule //BCD_7seg_100_ca
 
@@ -37,8 +37,8 @@ module BCD_7seg_decoder_ca (dula, num);
             4'b0101 : dula[7:0] = 8'b10100100;
             4'b0110 : dula[7:0] = 8'b10100000;
             4'b0111 : dula[7:0] = 8'b10001111;
-            4'b0111 : dula[7:0] = 8'b10000000;
-            4'b1000 : dula[7:0] = 8'b10000100;
+            4'b1000 : dula[7:0] = 8'b10000000;
+            4'b1001 : dula[7:0] = 8'b10000100;
         // 其他
             default: dula[7:0] = 2'hff;
         // 建议以后写入ABCDEF
