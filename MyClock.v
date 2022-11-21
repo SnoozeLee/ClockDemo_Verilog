@@ -36,7 +36,7 @@ Counter60 minCounter(
 BCD_7seg_100_ca minSeg(min_shi_seg, min_ge_seg, minState);
 
 // 处理小时数连线
-Counter60 hourCounter(
+Counter24 hourCounter(
     hourState, clk_day,
     rst_hour, en_hour, clk_hour, load_hour,
     data_hour_default
