@@ -1,5 +1,7 @@
 # 说明
 
+## 文档图片请下载后使用markdown工具查看
+
 ## 环境
 
 - Quartus Prime 19.1 Lite Edition
